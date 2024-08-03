@@ -1,7 +1,7 @@
 # Sarac
 
 #EN
-Simple, command-line calculator.
+##Simple, command-line calculator.
 Commands:
 y  : Classic help command.
 h  : 'first-value' 'second-value' 'operation' - Two value calculation command.
