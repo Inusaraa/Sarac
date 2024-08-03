@@ -1,6 +1,6 @@
 # Sarac
 
-EN
+#EN
 Simple, command-line calculator.
 Commands:
 y  : Classic help command.
@@ -12,7 +12,7 @@ Example usage:
  java -jar sarac.jar h 4 5 t
  java -jar sarac.jar th 4 k
  
-TR
+#TR
 Basit, komut satırlı hesap makinesi.
 Komutlar:
 y  : Klasik yardım komutu.
