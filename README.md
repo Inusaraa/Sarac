@@ -1,6 +1,6 @@
 # Sarac
 
-EN
+# EN
 
 Simple, command-line calculator.
 
@@ -22,7 +22,7 @@ Example usage:
  
  java -jar sarac.jar th 4 k
  
-TR
+# TR
 
 Basit, komut satırlı hesap makinesi.
 
