@@ -4,9 +4,9 @@ public class Main {
 
 	public static void main(String[] args) {
 		if(args.length == 0) {
-			System.out.println("Basit, komut satirli hesap makinesi.\n\nKomutlar:\n y : Klasik yardim komutu.\n h <ilk-deger> <son-deger> <islem> : Hesaplama yapma komutu. \n  -- <islem> bolumune <t> (toplama), <c> (cikarma), <ca> (carpma), <b> (bolme) ve <us> (us alma) gelmesi gerekiyor.\n th <ilk-deger> <islem> : Tek degerle yapilan hesaplama komutu.\n  -- <islem> bolumune <k>(degerin karesi), <kk>(degerin karekoku) gelmesi gerekiyor.\n Ornek kullanim:\n ... sarac.jar h 4 5 t\n ... sarac.jar th 4 k\n");
+			System.out.println("Basit, komut satirli hesap makinesi.\n\nKomutlar:\n y : Klasik yardim komutu.\n h <ilk-deger> <son-deger> <islem> : Hesaplama yapma komutu. \n  -- <islem> bolumune <t> (toplama), <c> (cikarma), <ca> (carpma), <b> (bolme) ve <us> (us alma) gelmesi gerekiyor.\n th <ilk-deger> <islem> : Tek degerle yapilan hesaplama komutu.\n  -- <islem> bolumune <k>(degerin karesi), <kk>(degerin karekoku) gelmesi gerekiyor.\nTrigonometri Komutlari:\n sin <deger>\n cos <deger>\n tan <deger>\n cot <deger>\n\nOrnek kullanim:\n java -jar sarac.jar h 4 5 t\n java -jar sarac.jar th 4 k\n");
 		} else if(args[0].equals("y")) {
-			System.out.println("Basit, komut satirli hesap makinesi.\n\nKomutlar:\n y : Klasik yardim komutu.\n h <ilk-deger> <son-deger> <islem> : Hesaplama yapma komutu. \n  -- <islem> bolumune <t> (toplama), <c> (cikarma), <ca> (carpma), <b> (bolme) ve <us> (us alma) gelmesi gerekiyor.\n th <ilk-deger> <islem> : Tek degerle yapilan hesaplama komutu.\n  -- <islem> bolumune <k>(degerin karesi), <kk>(degerin karekoku) gelmesi gerekiyor.\n Ornek kullanim:\n ... sarac.jar h 4 5 t\n ... sarac.jar th 4 k\n");
+			System.out.println("Basit, komut satirli hesap makinesi.\n\nKomutlar:\n y : Klasik yardim komutu.\n h <ilk-deger> <son-deger> <islem> : Hesaplama yapma komutu. \n  -- <islem> bolumune <t> (toplama), <c> (cikarma), <ca> (carpma), <b> (bolme) ve <us> (us alma) gelmesi gerekiyor.\n th <ilk-deger> <islem> : Tek degerle yapilan hesaplama komutu.\n  -- <islem> bolumune <k>(degerin karesi), <kk>(degerin karekoku) gelmesi gerekiyor.\nTrigonometri Komutlari:\n sin <deger>\n cos <deger>\n tan <deger>\n cot <deger>\n\nOrnek kullanim:\n java -jar sarac.jar h 4 5 t\n java -jar sarac.jar th 4 k\n");
 		} else if(args[0].equals("h")) {
 			try {
 				double ilkDeger = Double.parseDouble(args[1]);
@@ -53,6 +53,41 @@ public class Main {
 			}
 				
 			
+		} else if (args[0].equals("sin")) {
+			try {
+				double ilkDeger = Double.parseDouble(args[1]);
+				double sonuc = Math.sin(ilkDeger*(Math.PI/180));
+				System.out.println("\nIslemin sonucu: " + sonuc + "\n");
+			} catch (Exception e) {
+				System.out.println("Lutfen komutu tam girin!");
+			}
+		} else if (args[0].equals("cos")) {
+			try {
+				double ilkDeger = Double.parseDouble(args[1]);
+				double sonuc = Math.cos(ilkDeger*(Math.PI/180));
+				System.out.println("\nIslemin sonucu: " + sonuc + "\n");
+			} catch (Exception e) {
+				System.out.println("Lutfen komutu tam girin!");
+			}
+		} else if (args[0].equals("cot")) {
+			try {
+				double ilkDeger = Double.parseDouble(args[1]);
+				double sonuc = Math.cos(ilkDeger*(Math.PI/180))/Math.sin(ilkDeger*(Math.PI/180));
+				System.out.println("\nIslemin sonucu: " + sonuc + "\n");
+			} catch (Exception e) {
+				System.out.println("Lutfen komutu tam girin!");
+			}
+		} else if (args[0].equals("tan")) {
+			try {
+				double ilkDeger = Double.parseDouble(args[1]);
+				double sonuc = Math.tan(ilkDeger*(Math.PI/180));
+				System.out.println("\nIslemin sonucu: " + sonuc + "\n");
+			} catch (Exception e) {
+				System.out.println("Lutfen komutu tam girin!");
+			}
+		} else {
+		
+			System.out.println("Hatali komut");
 		}
 	}
 
