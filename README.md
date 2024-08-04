@@ -17,6 +17,7 @@ th : 'first-value' 'operation' - Single value calculation command.
  -'k' (square of the value), 'kk' (square root of the value) must appear in 'operation'.
  
 Trigonometry Calculations:
+
  sin 'value' 
  
  cos 'value' 
