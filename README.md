@@ -15,6 +15,11 @@ h  : 'first-value' 'second-value' 'operation' - Two value calculation command.
 th : 'first-value' 'operation' - Single value calculation command.
 
  -'k' (square of the value), 'kk' (square root of the value) must appear in 'operation'.
+Trigonometry Calculations:
+ sin 'value' 
+ cos 'value' 
+ tan 'value'
+ cot 'value'
  
 Example usage: 
 
@@ -37,6 +42,11 @@ h  : 'ilk-değer' 'ikinci-değer' 'işlem' - İki değerle hesaplama komutu.
 th : 'ilk-değer' 'işlem' - Tek değerle yapilan hesaplama komutu.
 
  -'islem' bölümüne 'k'(değerin karesi), 'kk'(değerin karekökü) gelmesi gerekiyor.
+Trigonometri Hesaplamaları:
+ sin 'değer' 
+ cos 'değer' 
+ tan 'değer'
+ cot 'değer'
  
 Örnek kullanım: 
 
